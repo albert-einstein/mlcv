@@ -1,0 +1,3 @@
+from train_cascade import train_cascades
+
+train_cascades.train_cascade(clear_previous_output=True)
