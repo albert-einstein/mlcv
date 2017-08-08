@@ -44,13 +44,16 @@ Thêm ảnh positive vào thư mục **`data/input_positive`** và thêm ảnh n
 
 Sau khi sửa các tham số huấn luyện, anh/chị có thể dùng Jupyter Notebook **`CascadeClassifierTraning.ipynb`** thực hiện huấn luyện.
 Kết quả của quá trình huấn luyện sẽ là file đuôi `.xml` chứa các thông tin về bộ phân lớp.
+
 ### Lưu ý
 Khi dùng file Jupyter Notebook **`CascadeClassifierTraning.ipynb`** để huấn luyện, sau khi sửa xong file **`config.py`**, code có thể chưa được update dẫn đến việc anh/chị huấn luyện lại model với tham số cũ. Để tránh việc đó, anh/chị có thể không dùng Jupyter Notebook để huấn luyện, thay vào đó chạy trực tiếp các file `.py` tại thư mục gốc.
+
 #### Chuẩn bị dữ liệu
 Chạy lệnh sau để chuẩn bị dữ liệu. Nếu không có thay đổi dữ liệu và HEIGHT, WIDTH của cửa sổ dịch thì chỉ cần chạy lệnh này lần đầu.
 ```bash
 python prepare_samples.py
 ```
+
 #### Huấn luyện cascade classifier
 Dùng lệnh sau để huấn luyện.
 ```bash
